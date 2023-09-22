@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+<body>
+    <h2>
+        <font face="Verdana" </font>¡Regístrate!
+    </h2>
+
+    <form>
+        <table border="0">
+            <!-- tr me permite a mi crear una fila -->
+            <tr>
+                <!-- td permite poner celdas en las tablas -->
+                <td><label for="">
+                        <font face="Verdana" </font><b>Nombre completo: </b>
+                    </label></td>
+                <td><input type="text" required>
+                    <font face="Verdana" </font>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">
+                        <font face="Verdana" </font><b>Correo electrónico: </b>
+                    </label></td>
+                <td><input type="email" required>
+                    <font face="Verdana" </font>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">
+                        <font face="Verdana" </font><b>Tipo de documento: </b>
+                    </label></td>
+                <td><select>
+                        <font face="Verdana" </font>
+                            <option value="RC">Registro civil</option>
+                            <option value="TI">Tarjeta de identidad</option>
+                            <option value="CC">Cedula de ciudadania</option>
+                    </select><br></td>
+            </tr>
+            <tr>
+                <td><label for="">
+                        <font face="Verdana" </font><b>Número de documento: </b>
+                    </label></td>
+                <td><input type="number" required>
+                    <font face="Verdana" </font>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">
+                        <font face="Verdana" </font><b>Teléfono: </b>
+                    </label></td>
+                <td><input type="number" required>
+                    <font face="Verdana" </font>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">
+                        <font face="Verdana" </font><b>Dirección: </b>
+                    </label></td>
+                <td><input type="text" required>
+                    <font face="Verdana" </font>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">
+                        <font face="Verdana" </font><b>¿Cómo nos conociste?: </b>
+                    </label></td>
+                <td><select>
+                        <font face="Verdana" </font>
+                            <option value="RS">Redes sociales</option>
+                            <option value="PR">Prensa</option>
+                            <option value="RA">Recomendación de un amigo</option>
+                            <option value="TR">Televisión - Radio</option>
+                    </select><br></td>
+            </tr>
+            <tr>
+                <td><label for="">
+                        <font face="Verdana" </font><b>Red social favorita: </b>
+                    </label></td>
+                <td>
+                    <input type="checkbox" id="IG" name="instagram" value="Instagram">
+                    <label for="IG"> Instagram</label><br>
+                    <input type="checkbox" id="FB" name="facebook" value="Facebook">
+                    <label for="FB"> Facebook</label><br>
+                    <input type="checkbox" id="X" name="X" value="X">
+                    <label for="X"> X</label><br>
+                    <input type="checkbox" id="TK" name="tiktok" value="TikTok">
+                    <label for="TK"><img
+                        src="data:image/png;base64,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"
+                        width="5%"> Tik Tok</label><br>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+
+</body>
+
+</html>
